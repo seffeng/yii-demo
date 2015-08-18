@@ -1,18 +1,25 @@
 <?php
-defined('YII_DEBUG') or define('YII_DEBUG', true);
-defined('YII_ENV') or define('YII_ENV',     'dev');
-defined('ROOT_PATH') or define('ROOT_PATH', __DIR__ . '/');
-defined('APP_NAME') or define('APP_NAME',   'admin');
-defined('APP_PATH') or define('APP_PATH',   ROOT_PATH . '/'. APP_NAME . '/');
+/**
+ * @description: 后台入口文件
+ * @file: admin.php
+ * @charset: UTF-8
+**/
 
-require(ROOT_PATH . 'common/vendor/autoload.php');
-require(ROOT_PATH . 'common/vendor/yiisoft/yii2/Yii.php');
-require(ROOT_PATH . 'common/config/bootstrap.php');
-require(APP_PATH . 'config/bootstrap.php');
+defined('ROOT_PATH') or define('ROOT_PATH', __DIR__ .'/');
+defined('APP_NAME')  or define('APP_NAME',  'backend');
+defined('APP_PATH')  or define('APP_PATH',  ROOT_PATH .'app/'. APP_NAME .'/');
+defined('CORE_PATH') or define('CORE_PATH', ROOT_PATH .'core/');
+defined('YII_DEBUG') or define('YII_DEBUG', TRUE);
+defined('YII_ENV')   or define('YII_ENV',   'dev');
+
+require(CORE_PATH . 'vendor/autoload.php');
+require(CORE_PATH . 'vendor/yiisoft/yii2/Yii.php');
+require(CORE_PATH . 'config/bootstrap.php');
 
 $config = yii\helpers\ArrayHelper::merge(
-    require(ROOT_PATH . 'common/config/main.php'),
+    require(CORE_PATH . 'config/main.php'),
     require(APP_PATH . 'config/main.php')
 );
 
 (new yii\web\Application($config)) -> run();
+?>
