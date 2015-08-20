@@ -1,6 +1,7 @@
 <?php
 return [
     'vendorPath' => dirname(__DIR__) . '/vendor',
+    'runtimePath' => ROOT_PATH .'data/runtime/'. APP_NAME,
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',

@@ -31,8 +31,8 @@ return [
             'errorAction' => 'site/error',
         ],
         'assetManager' => [
-            'basePath' => '@backend/assets',
-            'baseUrl'  => '@web/app/'. APP_NAME .'/assets',
+            'basePath' => ROOT_PATH .'assets/cache',
+            'baseUrl'  => '@web/assets/cache',
         ],
         'urlManager' => [
             'enablePrettyUrl' => false,
