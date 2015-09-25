@@ -6,7 +6,6 @@
 
 namespace appdir\frontend\controllers;
 
-use Yii;
 use yii\web\Controller;
 use appdir\frontend\models\FrontendModel;
 use appdir\backend\models\BackendModel;
