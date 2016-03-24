@@ -4,7 +4,7 @@
  *  @brief:  模块文件 FrontendModule
 **/
 
-namespace appdir\frontend;
+namespace frontend;
 
 use yii\base\Module;
 

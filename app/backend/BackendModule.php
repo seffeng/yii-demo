@@ -4,7 +4,7 @@
  *  @brief:  模块文件 BackendModule
 **/
 
-namespace appdir\backend;
+namespace backend;
 
 use yii\base\Module;
 

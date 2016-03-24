@@ -1,0 +1,25 @@
+{
+    "name": "seffeng/yii_demo",
+    "description": "yii_demo",
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "yiisoft/jquery": "^2.1",
+        "yiisoft/yii2-bootstrap": "^2.0",
+        "yiisoft/yii2-debug": "^2.0",
+        "yiisoft/yii2-composer": "^2.0",
+        "yiisoft/yii2-swiftmailer": "^2.0",
+        "yiisoft/yii2-redis": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "seffeng",
+            "email": "seffeng@sina.cn"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "asset-installer-paths": {
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}

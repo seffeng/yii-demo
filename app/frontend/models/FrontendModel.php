@@ -4,11 +4,10 @@
  *  @brief:  测试Model
 **/
 
-namespace appdir\frontend\models;
+namespace frontend\models;
 
 use yii\base\Model;
-use common\models\CommonModel;
-use appdir\backend\models\BackendModel;
+use backend\models\BackendModel;
 
 class FrontendModel extends Model {
 
@@ -17,6 +16,6 @@ class FrontendModel extends Model {
      *  @brief:  测试方法
     **/
     public static function getModel() {
-        return '<font color="blue">start_front==========================<br />'. __METHOD__ ."<br />".CommonModel::getModel().BackendModel::getModel().'end_front==========================</font><br />';
+        return '<font color="blue">start_front==========================<br />'. __METHOD__ ."<br />".BackendModel::getModel().'end_front==========================</font><br />';
     }
 }

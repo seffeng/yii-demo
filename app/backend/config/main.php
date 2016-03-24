@@ -7,12 +7,18 @@
 return [
     'id' => APP_NAME,
     'basePath' => dirname(__DIR__),
-    'controllerNamespace' => 'appdir\backend\controllers',
+    'controllerNamespace' => 'backend\controllers',
     'components' => [
+        'request' => [
+            'cookieValidationKey' => 'abcdefghijklmnopqbackend',
+        ],
+        'errorHandler' => [
+            'errorAction' => 'default/error',
+        ],
     ],
     'modules' => [
         'www' => [
-            'class' => 'appdir\frontend\FrontendModule',
+            'class' => 'frontend\FrontendModule',
         ],
     ],
 ];

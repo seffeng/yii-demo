@@ -4,7 +4,7 @@
  *  @brief:  默认控制器
 **/
 
-namespace appdir\console\controllers;
+namespace console\controllers;
 
 use yii\console\Controller;
 

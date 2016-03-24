@@ -4,13 +4,13 @@
  *  @brief:  默认控制器
 **/
 
-namespace appdir\backend\controllers;
+namespace backend\controllers;
 
-use yii\web\Controller;
-use appdir\frontend\models\FrontendModel;
-use appdir\backend\models\BackendModel;
+use backend\components\WebController;
+use frontend\models\FrontendModel;
+use backend\models\BackendModel;
 
-class DefaultController extends Controller {
+class DefaultController extends WebController {
 
     /**
      *  @name:   actions
