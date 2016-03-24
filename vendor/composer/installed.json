@@ -95,32 +95,6 @@
         ]
     },
     {
-        "name": "yiisoft/jquery",
-        "version": "2.1.1",
-        "version_normalized": "2.1.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/jquery.git",
-            "reference": "bc09bbbc8b40cf89812036188b6f94ae7627c73c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/jquery/zipball/bc09bbbc8b40cf89812036188b6f94ae7627c73c",
-            "reference": "bc09bbbc8b40cf89812036188b6f94ae7627c73c",
-            "shasum": ""
-        },
-        "time": "2014-05-07 05:00:09",
-        "type": "library",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "description": "jQuery JavaScript Library",
-        "homepage": "http://jquery.com",
-        "abandoned": true
-    },
-    {
         "name": "bower-asset/jquery",
         "version": "2.2.2",
         "version_normalized": "2.2.2.0",
