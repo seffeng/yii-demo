@@ -1,19 +1,34 @@
 <?php
 /**
- *  常量定义
-**/
+ * 全局常量定义
+ */
 
-/* 根目录 */
-define('ROOT_PATH',     __DIR__ .'/');
+/* 简化常量  */
+define('D_S',           DIRECTORY_SEPARATOR);
 
-/* vendor 目录 */
-define('VENDOR_PATH',   ROOT_PATH .'vendor/');
+/* 程序根目录 */
+define('ROOT_PATH',     preg_replace_callback('/[\/\\\\]+/', function($match){ return D_S; }, dirname(__FILE__)) . D_S);
 
-/* app 目录 */
-define('APP_PATH',      ROOT_PATH .'app/');
+/* vendor目录  */
+define('VENDOR_PATH',   ROOT_PATH .'vendor'. D_S);
 
-/* YII_DEBUG */
+/* app目录  */
+define('APP_PATH',      ROOT_PATH .'app'. D_S);
+
+/* web app目录  */
+define('APP_WEB_PATH',  ROOT_PATH .'app'. D_S . 'web' . D_S);
+
+/* data目录  */
+define('DATA_PATH',     ROOT_PATH .'data'. D_S);
+
+/* runtime目录  */
+define('RUNTIME_PATH',  ROOT_PATH .'runtime'. D_S);
+
+/* 当前时间戳 */
+define('THIS_TIME',     time());
+
+/* 调试模式  */
 define('YII_DEBUG',     TRUE);
 
-/* YII_ENV */
+/* 运行环境['dev', 'prod'] */
 define('YII_ENV',       'dev');

@@ -1,19 +1,18 @@
 <?php
 /**
- *  @file:   main.php
- *  @brief:  全局配置文件
-**/
+ * 全局配置
+ */
 
 return [
-    'vendorPath' => VENDOR_PATH,
-    'runtimePath' => ROOT_PATH .'data/runtime/'. APP_NAME,
-    'defaultRoute' => 'default',
-    'components' => [
+    'vendorPath'  => VENDOR_PATH,
+    'runtimePath' => RUNTIME_PATH . APP_NAME,
+    'timeZone'    => 'Asia/Shanghai',
+    'components'  => [
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
-            'targets' => [
+            'targets'    => [
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class'  => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
                 ],
             ],
@@ -23,16 +22,18 @@ return [
         ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8',
+            'dsn'   => 'mysql:host=localhost;dbname=yii_deom',
+            'username' => 'user',
+            'password' => 'pass',
+            'charset'  => 'utf8',
+            'tablePrefix' => 'yi_',
         ],
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'enableStrictParsing' => false,
-            'showScriptName' => false,
+            'enablePrettyUrl' => TRUE,
+            'enableStrictParsing' => FALSE,
+            'showScriptName' => FALSE,
             'rules' => [],
         ],
     ],
+    'params' => include(__DIR__ .'/params.php'),
 ];

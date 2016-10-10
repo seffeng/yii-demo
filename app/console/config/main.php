@@ -1,23 +1,14 @@
 <?php
 /**
- *  @file:   main.php
- *  @brief:  配置文件
-**/
+ * 配置文件
+ */
 
 return [
-    'id' => APP_NAME,
+    'id'    => APP_NAME,
+    'name'  => 'console',
     'basePath' => dirname(__DIR__),
-    'vendorPath' => VENDOR_PATH,
-    'runtimePath' => ROOT_PATH .'data/runtime/'. APP_NAME,
-    'controllerNamespace' => 'console\controllers',
+    'controllerNamespace' => 'zxf\console\controllers',
     'components' => [
-        'log' => [
-            'targets' => [
-                [
-                    'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
-                ],
-            ],
-        ],
     ],
+    'params' => include(__DIR__ . '/params.php'),
 ];
