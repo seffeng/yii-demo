@@ -13,7 +13,6 @@ require(dirname(THIS_PATH) . '/env.php');
 
 require(VENDOR_PATH .'autoload.php');
 require(VENDOR_PATH .'yiisoft/yii2/Yii.php');
-require(APP_PATH .'config/alias.php');
 
 $config = yii\helpers\ArrayHelper::merge(
     require(APP_PATH . 'config/main.php'),

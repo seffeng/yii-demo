@@ -25,7 +25,7 @@ $config = [
             ],
         ],
     ],
-    'params' => include(__DIR__ . '/params.php'),
+    'params' => include(__DIR__ . '/params.config.php'),
 ];
 
 if (YII_DEBUG) {

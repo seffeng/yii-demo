@@ -2,7 +2,7 @@
 
 namespace zxf\console\controllers;
 
-use zxf\components\ConsoleController;
+use zxf\components\base\ConsoleController;
 
 class TestController extends ConsoleController {
 

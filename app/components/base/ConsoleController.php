@@ -3,7 +3,7 @@
  * 全局控制器
  */
 
-namespace zxf\components;
+namespace zxf\components\base;
 
 use yii\console\Controller;
 
