@@ -10,5 +10,5 @@ return [
     'controllerNamespace' => 'zxf\console\controllers',
     'components' => [
     ],
-    'params' => include(__DIR__ . '/params.php'),
+    'params' => include(__DIR__ . '/params.config.php'),
 ];
